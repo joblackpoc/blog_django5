@@ -11,15 +11,15 @@ https://templatemo.com/tm-590-topic-listing
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #13547a;
-  --secondary-color:              #80d0c7;
+  --primary-color:                #093e5c;
+  --secondary-color:              #2ad146;
   --section-bg-color:             #f0f8ff;
-  --custom-btn-bg-color:          #80d0c7;
+  --custom-btn-bg-color:          #1cb631;
   --custom-btn-bg-hover-color:    #13547a;
   --dark-color:                   #000000;
   --p-color:                      #717275;
-  --border-color:                 #7fffd4;
-  --link-hover-color:             #13547a;
+  --border-color:                 #1b5a45;
+  --link-hover-color:             #0d3d58;
 
   --body-font-family:             'Open Sans', sans-serif;
   --title-font-family:            'Montserrat', sans-serif;
@@ -31,7 +31,7 @@ https://templatemo.com/tm-590-topic-listing
   --h5-font-size:                 24px;
   --h6-font-size:                 22px;
   --p-font-size:                  20px;
-  --menu-font-size:               14px;
+  --menu-font-size:               18px;
   --btn-font-size:                18px;
   --copyright-font-size:          16px;
 
