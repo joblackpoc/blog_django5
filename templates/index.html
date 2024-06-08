@@ -57,11 +57,11 @@ https://templatemo.com/tm-590-topic-listing
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_2">ขอใบรับรอง</a>
+                                <a class="nav-link click-scroll" href="#section_2">ภาระกิจ</a>
                             </li>
     
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_3">แจ้งเหตุร้องเรียน</a>
+                                <a class="nav-link click-scroll" href="#section_3">วิสัยทัศน์</a>
                             </li>
 
                             <li class="nav-item">
@@ -190,7 +190,7 @@ https://templatemo.com/tm-590-topic-listing
 
                     </div>
                 </div>
-
+            <!--
                 <div class="container-fluid">
                     <div class="row">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -198,29 +198,44 @@ https://templatemo.com/tm-590-topic-listing
                                 <button class="nav-link active" id="design-tab" data-bs-toggle="tab" data-bs-target="#design-tab-pane" type="button" role="tab" aria-controls="design-tab-pane" aria-selected="true">ภาระกิจ 1</button>
                             </li>
 
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="marketing-tab" data-bs-toggle="tab" data-bs-target="#marketing-tab-pane" type="button" role="tab" aria-controls="marketing-tab-pane" aria-selected="false">ภาระกิจ 2</button>
-                            </li>
-
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="finance-tab" data-bs-toggle="tab" data-bs-target="#finance-tab-pane" type="button" role="tab" aria-controls="finance-tab-pane" aria-selected="false">ภาระกิจ 3</button>
-                            </li>
-
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="music-tab" data-bs-toggle="tab" data-bs-target="#music-tab-pane" type="button" role="tab" aria-controls="music-tab-pane" aria-selected="false">ภาระกิจ 4</button>
-                            </li>
-
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="education-tab" data-bs-toggle="tab" data-bs-target="#education-tab-pane" type="button" role="tab" aria-controls="education-tab-pane" aria-selected="false">ภาระกิจ 5</button>
-                            </li>
                         </ul>
                     </div>
                 </div>
-
+            -->
                 <div class="container">
                     <div class="row">
+<!-- My Tab col-12-->
+                        <div class="col-12 mb-4">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="design-tab-pane" role="tabpanel" aria-labelledby="design-tab" tabindex="0">
+                                    <div class="row">
+                                        {% for post in featured_post %}
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                <a href="{% url 'home' %}l">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2">{{post.category}}</h5>
 
-                        <div class="col-12">
+                                                            <p class="mb-0">{{post.blog_body}}</p>
+                                                        </div>
+
+                                                        <span class="badge bg-design rounded-pill ms-auto">14</span>
+                                                    </div>
+
+                                                    <img src="{{ post.featured_image.url }}" class="custom-block-image img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+<!-- Close Tab content-->
+<!-- Old tab            <div class="col-12">
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active" id="design-tab-pane" role="tabpanel" aria-labelledby="design-tab" tabindex="0">
                                     <div class="row">
@@ -503,7 +518,7 @@ https://templatemo.com/tm-590-topic-listing
                     </div>
                 </div>
             </section>
-
+        -->
 
             <section class="timeline-section section-padding" id="section_3">
                 <div class="section-overlay"></div>
